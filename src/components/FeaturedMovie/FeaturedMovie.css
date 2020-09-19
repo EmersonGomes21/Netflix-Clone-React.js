@@ -82,19 +82,20 @@ margin-top: 15px;
 @media(max-width: 760px){
   .featured{
     height: 90vh;
+    margin-left: 0px;
   }
   .featured--horizontal{
-    margin-top: -30px;
+    margin: 0px ;
   }
   .featured--name{
-    font-size: 30px;
+    font-size: 35px;
   }
   .featured--info{
     font-size: 12px;
   }
   .featured--description{
     font-size: 10px;
-    max-width: 70%;
+    max-width: 65%;
     margin-right: 30px;
   }
   .featured--watch--button,

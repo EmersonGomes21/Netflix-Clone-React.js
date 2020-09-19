@@ -34,8 +34,9 @@ export default ({black}) => {
         <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn(!classOn)}>Minha lista</Link>
         </div>
 
-        <div>
-          <Link className="navigation">Navegar<ArrowDropDownIcon className="arrowNavigation"/></Link>
+        <div className="navigation">
+          <Link to="/">Navegar</Link>
+          <ArrowDropDownIcon className="arrowNavigation"/>
           
         </div>
    
