@@ -70,13 +70,12 @@ header.black{
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  padding-right: 0px;
+ 
 }
 .container-right .icons{
   padding-right: 20px;
   width: 50px;
 }
-
 
 .container-right .header--user{
   height: 35px;
@@ -98,8 +97,7 @@ width: 25px;
 @media(max-width: 870px){
   .container-left{
     width: 30%;
-    background-color: darkgoldenrod;
-   
+  
   }
   
   .container-left .header--logo{
@@ -169,17 +167,16 @@ width: 25px;
 }
 
 @media(max-width: 390px){
+
   .container-left{
     display: flex;
     position: relative;
-    right:  25px;
-    width: 49%;
-    align-items: center;
+    width: 50%;
   }
 
   .container-left .header--logo{ 
     position: relative;
-    width: 100px;
+    width: 80px;
     height: 30px;
     left: -30px;
     margin-right: 0px;
@@ -187,8 +184,8 @@ width: 25px;
   }
 
 .container-left .header--logo img{
-  padding: 6px;
-  width: 140%;
+  padding: 3px;
+  width: 100%;
   height: 100%;
 }
 
@@ -207,7 +204,11 @@ width: 25px;
   .container-right{
     width: 50%;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    margin-left: 0;
+    background-color: darkgoldenrod;
   }
 
   .container-right .icons{
@@ -217,9 +218,14 @@ width: 25px;
   
   .container-right .header--user{
     position: relative;
-    top: -2px;
-    height: 25px;
-  
+    top: -10px;
+    width: 20px;
+    height: 20px;
+   
+  }
+  .container-right .header--user .arrow{
+    position: relative;
+    top: 5px;
   }
 
 
