@@ -37,11 +37,21 @@ footer{
 }
 
 
+@media(max-width: 820px){
+  .lists{
+    margin-top: -150px;
+  }
+}
 
+@media(max-width: 780px){
+  .lists{
+    margin-top: -220px;
+  }
+}
 
 @media(max-width: 760px){
   .lists{
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -51,9 +61,32 @@ footer{
   }
 }
 
+@media(max-width: 570px){
+  .lists{
+    margin-top: 70px;
+  }
+}
+
+@media(max-width: 450px){
+  .lists{
+    margin-top: -210px;
+  }
+}
+
+@media(max-width: 380px){
+  .lists{
+    margin-top: -230px;
+  }
+}
+@media(max-width: 360px){
+  .lists{
+    margin-top: -160px;
+  }
+}
 
 @media(max-width: 350px){
   .lists{
-    margin-top: -100px;
+    margin-top: -90px;
   }
 }
+
