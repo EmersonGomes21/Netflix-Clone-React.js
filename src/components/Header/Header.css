@@ -164,7 +164,6 @@ width: 25px;
 @media(max-width: 670px){
   .container-left{
     width: 50%;
-    background-color: darkgoldenrod;
    
   }
 }
