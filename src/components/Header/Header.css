@@ -1,0 +1,133 @@
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: transparent;
+  transition: all ease 0.7s;
+}
+.container-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-left ,.container-as a{
+  color: #e4e1e1;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all ease 0.3s;
+}
+.container-left .container-as a.select{
+  color: #16e616;
+}
+
+.container-left a.oneA{
+  padding-left: 30px;
+}
+.container-left a:hover{
+  color: #787878;
+ 
+}
+
+header.black{
+  background-color: #111111;
+}
+
+.container-left .header--logo{
+  position: relative;
+  left: 5px;
+  height: 55px;
+}
+
+
+.container-left .header--logo img{
+  padding-left: 0px;
+  padding-bottom: 5px;
+  height: 100%;
+  
+}
+.container-left .navigation{
+  display: none;
+}
+
+.container-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-right: 20px;
+}
+.container-right .icons{
+  padding-right: 20px;
+  width: 50px;
+}
+
+
+.container-right .header--user{
+  height: 35px;
+
+}
+.container-right .header--user img{
+ 
+  height: 100%;
+  border-radius: 3px;
+  
+}
+
+.container-right .header--user .arrow{
+color: #fdfdfd;
+width: 25px;
+
+}
+
+@media(max-width: 840px){
+  .container-left .container-as{
+    display: none;
+  }
+
+  .container-left a.navigation{
+    display: flex;
+    font-size: 10px;
+    color: #fdfdfd;
+    text-decoration: none;
+  }
+
+  .container-left .navigation .arrowNavigation{
+    margin: auto 0px;
+  }
+  .container-left a{
+    padding-left: 5px;
+  }
+  .container-left{
+    margin-right: 30px;
+    
+  }
+
+  .container-left .header--logo{
+    position: relative;
+    right: 0;
+    left: 0px;
+    height: 40px;
+    margin-right: 20px;
+   
+  }
+  .container-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+  }
+
+
+  .container-right .icons{
+    padding-right: 20px;
+    width: 40px;
+  }
+
+}
