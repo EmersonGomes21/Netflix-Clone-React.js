@@ -74,21 +74,37 @@ header.black{
 }
 
 .container-right{
+
   width: 40%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
- 
+  
 }
 .container-right input{
   display: flex;
   position: relative;
-  width: 50%;
-  border: 0;
+  width: 40%;
+  height: 25px;
+  border-color: #fff;
   outline: none; 
   border-radius: 5px;
-  padding-left: -50px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #000;
+ 
+  color: #fdfdfd;
+  padding: 10px;
 }
+.container-right .SearchIcon-on{
+  display: flex;
+  position: relative;
+  left: -200px;
+  width: 20px;
+  transition: all ease 1s;
+
+}
+
 .container-right input.inputHide{
   display: none;
 }
@@ -98,6 +114,7 @@ display: flex;
 .container-right .icons{
   padding-right: 10px;
   width: 50px;
+ 
 }
 
 .container-right .header--user{
@@ -122,6 +139,19 @@ width: 25px;
     width: 30%;
   
   }
+  .container-right input.inputShow{
+    display: none;
+  }
+ 
+  .container-right .SearchIcon-on{
+    display: flex;
+    position: relative;
+    left: 20px;
+    top: -5px;
+    width: 20px;
+  
+  }
+
   
   .container-left .header--logo{
     position: relative;
