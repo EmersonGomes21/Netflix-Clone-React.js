@@ -10,6 +10,8 @@ import './Header.css';
 
 export default ({black}) => {
   const [classOn, setClassOn] = useState(false);
+  const [showNavigation, setShowNavigation] = useState(false);
+
   return (
     <header className={black ? 'black':''}>
       <div className="container-left">
@@ -34,11 +36,21 @@ export default ({black}) => {
         <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn(!classOn)}>Minha lista</Link>
         </div>
 
-        <div className="navigation">
-          <Link to="/">Navegar</Link>
+        <div className="navigation" onClick={ () => setShowNavigation (!showNavigation) }>
+          <Link >Navegar</Link>
           <ArrowDropDownIcon className="arrowNavigation"/>
+           
           
         </div>
+        {
+       <div className={showNavigation ? 'navigationShow' : 'navigationHide' }>
+            <Link>Início</Link>
+            <Link>Séries</Link>
+            <Link>Filmes</Link>
+            <Link>Recentes</Link>
+             <Link>Lista</Link>
+          </div>
+            }
    
       </div>
 

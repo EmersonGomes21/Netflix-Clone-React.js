@@ -57,6 +57,12 @@ header{
   color: #787878;
  
 }
+.container-left .navigationHide{
+  display: none;
+}
+.container-left .navigationShow{
+  display: none;
+}
 
 header.black{
   background-color: #111111;
@@ -117,10 +123,11 @@ width: 25px;
   }
   .container-left .navigation{
     display: flex;
-    position: relative;
+    position: absolute;
     align-items: center;
     right: 25px;
   }
+  
 
   .container-left .navigation a{
     position: relative;
@@ -163,6 +170,58 @@ width: 25px;
     width: 50%;
    
   }
+
+  .container-left .navigationHide{
+    display:  none;
+  }
+  .container-left .navigationShow{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    left: 30px;
+  
+  }
+  .container-left .navigationShow a{
+  display: flex;
+   width: 100%;
+   font-size: 12px;
+   position: relative;
+   top: 20px;
+   left: -40px;
+   text-decoration: none;
+   color: #fff;
+   cursor: pointer;
+  }
+  .container-left .navigation{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 25px;
+    padding-bottom: 10px;
+  }
+  .container-right .icons,
+  .container-right .header--user
+  {display: flex;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .container-right .icons{
+    margin-right: -5px;
+    width: 40px;
+    left: 20px;
+  }
+  .container-right .header--user {
+    position: relative;
+    left: 20px;
+  }
+  .container-right .header--user img{
+    position: relative;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media(max-width: 390px){
@@ -204,7 +263,12 @@ width: 25px;
     align-items: center;
     justify-content: center;
   }
-
+  .container-right .icons,
+  .container-right .header--user
+  {display: flex;
+    position: relative;
+    padding-top: 10px;
+  }
   .container-right .icons{
     margin-right: -5px;
     width: 40px;
