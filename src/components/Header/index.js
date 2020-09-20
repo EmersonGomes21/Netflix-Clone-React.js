@@ -62,8 +62,9 @@ export default ({black}) => {
 
       <div className="container-right">
 
-       <input type="text" className={showInput ? 'inputShow' : 'inputHide'}/>
-       <SearchIcon className="icons" onClick={ ()=> setShowInput(!showInput)}/>
+       <input type="text" className={showInput ? 'inputShow' : 'inputHide'} placeholder="Títulos, gente e gêneros" />
+
+       <SearchIcon className={ showInput? 'SearchIcon-on' : 'icons'} onClick={ ()=> setShowInput(!showInput)}/>
         <CardGiftcardIcon className="icons"/>
         <NotificationsIcon className="icons"/>
 
