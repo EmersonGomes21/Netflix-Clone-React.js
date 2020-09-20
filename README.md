@@ -21,4 +21,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://pt.wikip
 
 ---
 
-Feito com ♥ by Emerson Gomes
+  Feito com ♥ by Emerson Gomes </br>
+  Direitos de imagem para a Netflix </br>
+  Dados pegos do site Themoviedb.org
