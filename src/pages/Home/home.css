@@ -69,13 +69,13 @@ footer{
 
 @media(max-width: 450px){
   .lists{
-    margin-top: -210px;
+    margin-top: -240px;
   }
 }
 
 @media(max-width: 380px){
   .lists{
-    margin-top: -230px;
+    margin-top: -180px;
   }
 }
 @media(max-width: 360px){
