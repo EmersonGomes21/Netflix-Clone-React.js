@@ -14,7 +14,9 @@ export default ({black}) => {
   const [classOn3, setClassOn3] = useState(false);
   const [classOn4, setClassOn4] = useState(false);
   const [classOn5, setClassOn5] = useState(false);
+
   const [showNavigation, setShowNavigation] = useState(false);
+  const [showInput, setShowInput] = useState(false);
 
   return (
     <header className={black ? 'black':''}>
@@ -60,7 +62,8 @@ export default ({black}) => {
 
       <div className="container-right">
 
-        <SearchIcon className="icons"/>
+       <input type="text" className={showInput ? 'inputShow' : 'inputHide'}/>
+       <SearchIcon className="icons" onClick={ ()=> setShowInput(!showInput)}/>
         <CardGiftcardIcon className="icons"/>
         <NotificationsIcon className="icons"/>
 

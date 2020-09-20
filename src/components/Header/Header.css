@@ -38,6 +38,7 @@ header{
 .container-left .container-as{
   position: relative;
   left: 20px;
+  transition: all ease 0.3s;
 }
 .container-left .container-as a{
   color: #e4e1e1;
@@ -73,13 +74,27 @@ header.black{
 }
 
 .container-right{
+  width: 40%;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
  
 }
+.container-right input{
+  width: 30%;
+  border: 0;
+  outline: none; 
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.container-right input.inputHide{
+  display: none;
+}
+.container-right input.inputShow{
+display: flex;
+}
 .container-right .icons{
-  padding-right: 20px;
+  padding-right: 10px;
   width: 50px;
 }
 
@@ -126,6 +141,7 @@ width: 25px;
     position: absolute;
     align-items: center;
     right: 25px;
+    transition: all ease 0.3s;
   }
   
 
@@ -136,8 +152,36 @@ width: 25px;
     text-decoration: none;
     left: 0px;
     align-items: center;
+    transition: all ease 0.3s;
    
   }
+  
+  .container-left .navigationHide{
+    display:  none;
+  }
+  .container-left .navigationShow{
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    left: 30px;
+    transition: all ease 0.3s;
+  }
+  .container-left .navigationShow a{
+  display: flex;
+   width: 100%;
+   font-size: 12px;
+   position: relative;
+   top: 20px;
+   left: -40px;
+   text-decoration: none;
+   color: rgb(240, 228, 228);
+   cursor: pointer;
+   transition: all ease 0.3s;
+  }
+  .container-left .navigationShow a:hover{
+  color: #fff;
+    }
 
   .container-left .navigation .arrowNavigation{
     margin: 0;
@@ -153,6 +197,7 @@ width: 25px;
     padding-right: 0px;
 
   }
+ 
 
 
   .container-right .icons{
@@ -171,37 +216,14 @@ width: 25px;
    
   }
 
-  .container-left .navigationHide{
-    display:  none;
-  }
-  .container-left .navigationShow{
-    display: inline-block;
-    position: relative;
-    width: 40px;
-    height: 30px;
-    left: 30px;
-  
-  }
-  .container-left .navigationShow a{
-  display: flex;
-   width: 100%;
-   font-size: 12px;
-   position: relative;
-   top: 20px;
-   left: -40px;
-   text-decoration: none;
-   color: rgb(240, 228, 228);
-   cursor: pointer;
-  }
-  .container-left .navigationShow a:hover{
-  color: #fff;
-    }
   .container-left .navigation{
     display: flex;
     position: absolute;
     align-items: center;
     right: 25px;
     padding-bottom: 10px;
+    transition: all ease 0.3s;
+  
   }
   .container-right .icons,
   .container-right .header--user
