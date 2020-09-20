@@ -10,7 +10,7 @@
 
 <h2> Click na imagem para ter acesso ao video de apresentação do clone da página inicial do Netflix.</h2>
 
-<a href="https://youtu.be/3JB6aXsLVgY" > <img src="https://raw.githubusercontent.com/EmersonGomes21/repositorios-readmes/master/netflix-clone/print-vers%C3%A3o-desktop.JPG"/> <a/>
+<a href="https://youtu.be/3JB6aXsLVgY" > <img src="https://raw.githubusercontent.com/EmersonGomes21/repositorios-readmes/master/netflix-clone/print-vers%C3%A3o-desktop.JPG" width="1000"/> <a/>
 
 ## :memo: Licença
 
