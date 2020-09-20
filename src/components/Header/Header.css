@@ -76,16 +76,18 @@ header.black{
 .container-right{
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
  
 }
 .container-right input{
-  width: 30%;
+  display: flex;
+  position: relative;
+  width: 50%;
   border: 0;
   outline: none; 
   border-radius: 5px;
-  padding-left: 10px;
+  padding-left: -50px;
 }
 .container-right input.inputHide{
   display: none;
