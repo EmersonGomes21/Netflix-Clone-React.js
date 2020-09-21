@@ -113,20 +113,20 @@ header.black{
 display: flex;
 }
 .container-right .icons{
-  padding-right: 10px;
-  width: 50px;
+ padding-right: 20px;
+  width: 46px;
  
 }
 
 .container-right .header--user{
-  height: 35px;
+  width: 60px;
+  height: 30px;
 
 }
 .container-right .header--user img{
- 
+  width: 50%;
   height: 100%;
   border-radius: 3px;
-  
 }
 
 .container-right .header--user .arrow{
