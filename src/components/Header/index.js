@@ -9,9 +9,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import './Header.css';
 
 export default ({black}) => {
-  const [classOn, setClassOn] = useState('inicio');
-  
-
+  const [filterSelect, setFilterSelect] = useState('inicio');
   const [showNavigation, setShowNavigation] = useState(false);
   const [showInput, setShowInput] = useState(false);
 
@@ -28,19 +26,29 @@ export default ({black}) => {
 
          <div className="container-as">
         
-        <Link to="/"  className={ classOn === 'inicio' ? 'select' : ''} onClick={()=>setClassOn('inicio')}>Início</Link>
+        <Link to="/"  className={
+           filterSelect === 'inicio' ? 'select' : '' } 
+           onClick={()=>setFilterSelect('inicio')}>Início</Link>
 
-        <Link to="/" className={ classOn === 'series' ? 'select' : ''} onClick={()=>setClassOn('series')}>Séries</Link>
+        <Link to="/" className={
+        filterSelect === 'series' ? 'select' : ''} 
+        onClick={()=>setFilterSelect('series')}>Séries</Link>
 
-        <Link to="/" className={ classOn === 'filmes' ? 'select' : ''} onClick={()=>setClassOn('filmes')}>Filmes</Link>
+        <Link to="/" className={
+           filterSelect === 'filmes' ? 'select' : ''}    
+           onClick={()=>setFilterSelect('filmes')}>Filmes</Link>
 
-        <Link to="/" className={ classOn === 'MRecentes' ? 'select' : ''} onClick={()=>setClassOn('MRecentes')}>Mais recentes</Link>
+        <Link to="/" className={ 
+          filterSelect === 'MRecentes' ? 'select' : ''}
+          onClick={()=>setFilterSelect('MRecentes')}>Mais recentes</Link>
 
-        <Link to="/" className={ classOn === 'MLista' ? 'select' : '' } onClick={()=>setClassOn('MLista')}>Minha lista</Link>
+        <Link to="/" className={
+           filterSelect === 'MLista' ? 'select' : '' }
+           onClick={()=>setFilterSelect('MLista')}>Minha lista</Link>
         </div>
 
         <div className="navigation" onClick={ () => setShowNavigation (!showNavigation) }>
-          <Link >Navegar</Link>
+          <Link>Navegar</Link>
           <ArrowDropDownIcon className="arrowNavigation"/>
            
           
