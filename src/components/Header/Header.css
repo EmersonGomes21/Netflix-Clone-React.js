@@ -41,14 +41,14 @@ header{
   transition: all ease 0.3s;
 }
 .container-left .container-as a{
-  color: #e4e1e1;
+  color: #c2bbbb;
   padding-left: 30px;
   text-decoration: none;
   font-size: 14px;
   transition: all ease 0.3s;
 }
 .container-left .container-as a.select{
-  color: #16e616;
+  color: #fff;
 }
 
 .container-left a.oneA{

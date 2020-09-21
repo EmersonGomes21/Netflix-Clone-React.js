@@ -9,11 +9,8 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import './Header.css';
 
 export default ({black}) => {
-  const [classOn, setClassOn] = useState(false);
-  const [classOn2, setClassOn2] = useState(false);
-  const [classOn3, setClassOn3] = useState(false);
-  const [classOn4, setClassOn4] = useState(false);
-  const [classOn5, setClassOn5] = useState(false);
+  const [classOn, setClassOn] = useState('inicio');
+  
 
   const [showNavigation, setShowNavigation] = useState(false);
   const [showInput, setShowInput] = useState(false);
@@ -31,15 +28,15 @@ export default ({black}) => {
 
          <div className="container-as">
         
-        <Link to="/"  className={ classOn ? 'select' : ''} onClick={()=>setClassOn(!classOn)}>Início</Link>
+        <Link to="/"  className={ classOn === 'inicio' ? 'select' : ''} onClick={()=>setClassOn('inicio')}>Início</Link>
 
-        <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn2(!classOn2)}>Séries</Link>
+        <Link to="/" className={ classOn === 'series' ? 'select' : ''} onClick={()=>setClassOn('series')}>Séries</Link>
 
-        <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn3(!classOn3)}>Filmes</Link>
+        <Link to="/" className={ classOn === 'filmes' ? 'select' : ''} onClick={()=>setClassOn('filmes')}>Filmes</Link>
 
-        <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn4(!classOn4)}>Mais recentes</Link>
+        <Link to="/" className={ classOn === 'MRecentes' ? 'select' : ''} onClick={()=>setClassOn('MRecentes')}>Mais recentes</Link>
 
-        <Link to="/" className={ classOn ? 'select' : ''} onClick={()=>setClassOn5(!classOn5)}>Minha lista</Link>
+        <Link to="/" className={ classOn === 'MLista' ? 'select' : '' } onClick={()=>setClassOn('MLista')}>Minha lista</Link>
         </div>
 
         <div className="navigation" onClick={ () => setShowNavigation (!showNavigation) }>
